@@ -19,11 +19,11 @@ const Footer = () => {
         LinkedIn
       </a>
       <a
-        href="https://twitter.com/YourTwitterUsername"
+        href="https://facebook.com/YourFacebookUsername"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Twitter
+        Facebook
       </a>
       {/* Add more links as you need */}
     </footer>
