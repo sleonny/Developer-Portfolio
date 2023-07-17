@@ -1,13 +1,16 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './Navigation.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
     <nav className="navigation">
-      <NavLink to="/about">About Me</NavLink>
-      <NavLink to="/portfolio">Portfolio</NavLink>
-      {/* Add more NavLinks as needed */}
+      <NavLink exact to="/">
+        About Me
+      </NavLink>
+      <NavLink to="/Portfolio">Portfolio</NavLink>
+      <NavLink to="/Contact">Contact</NavLink>
+      <NavLink to="/Resume">Resume</NavLink>
     </nav>
   );
 };

@@ -4,28 +4,32 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <a
-        href="https://github.com/YourGitHubUsername"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
+      <a href="https://github.com/sleonny" target="_blank" rel="noreferrer">
+        <img
+          src={process.env.PUBLIC_URL + "/public/githublogo.png"}
+          alt="Github"
+        />
       </a>
       <a
-        href="https://linkedin.com/in/YourLinkedInUsername"
+        href="https://www.linkedin.com/in/sean-leonard-23280010b/"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="roreferrer"
       >
-        LinkedIn
+        <img
+          src={process.env.PUBLIC_URL + "/public/linkedinlogo.png"}
+          alt="LinkedIn"
+        />
       </a>
       <a
-        href="https://facebook.com/YourFacebookUsername"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="https://www.facebook.com/sean.leonard.359126/"
+        target="blank"
+        rel="noreferrer"
       >
-        Facebook
+        <img
+          src={process.env.PUBLIC_URL + "/public/facebooklogo.png"}
+          alt="Facebook"
+        />
       </a>
-      {/* Add more links as you need */}
     </footer>
   );
 };
