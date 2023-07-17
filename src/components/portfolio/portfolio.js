@@ -1,35 +1,39 @@
 import React from "react";
-import "./Portfolio.css";
+import "./portfolio.css";
 
 const Portfolio = () => {
-  // Sample data, replace with your actual projects
   const projects = [
     {
-      title: "Project 1",
-      image: "project1.png",
-      deployedUrl: "https://www.example.com",
-      repoUrl: "https://github.com/user/repo",
+      title: "Exerease",
+      imageUrl: process.env.PUBLIC_URL + "/public/Exerease.png",
+      projectUrl: "https://github.com/michelleshanna92/Exerease",
     },
-    // Add more projects as needed
+    {
+      title: "FootWearHouse",
+      imageUrl: process.env.PUBLIC_URL + "/public/FootWearHouse.png",
+      projectUrl: "https://github.com/sleonny/FootWearhouse",
+    },
+    {
+      title: "Golf Tournament",
+      imageUrl: process.env.PUBLIC_URL + "/public/RobbyInv.png",
+      projectUrl: "https://github.com/sleonny/RobbyInv",
+    },
   ];
 
   return (
     <div className="portfolio">
       {projects.map((project, index) => (
-        <div key={index} className="project-card">
-          <img src={project.image} alt={project.title} />
-          <h2>{project.title}</h2>
-          <a
-            href={project.deployedUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Deployed App
-          </a>
-          <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-            GitHub Repo
-          </a>
-        </div>
+        <a
+          key={index}
+          href={project.projectUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="project-card">
+            <img src={project.imageUrl} alt={project.title} />
+            <p>{project.title}</p>
+          </div>
+        </a>
       ))}
     </div>
   );
