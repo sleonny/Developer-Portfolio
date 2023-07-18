@@ -12,7 +12,7 @@ const AboutMe = () => {
         </div>
         <div className="image-container">
           <img
-            src={process.env.PUBLIC_URL + "../../../public"}
+            src={process.env.PUBLIC_URL + "/lima.jpg"}
             alt="Posing by a boat"
           />
         </div>
@@ -21,3 +21,5 @@ const AboutMe = () => {
     </div>
   );
 };
+
+export default AboutMe;

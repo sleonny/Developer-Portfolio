@@ -1,6 +1,7 @@
 .portfolio {
     display: flex;
     justify-content: space-between;
+    background-color: #D5A021;
 }
 
 .project-card {
@@ -14,4 +15,5 @@
 .project-card img {
     width: 100%;
     height: auto;
+    background-color: #D5A021;
 }
