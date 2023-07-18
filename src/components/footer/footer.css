@@ -1,16 +1,26 @@
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Assuming your main content is wrapped in a div with the class "main-content" */
+  .main-content {
+    flex: 1;
+  }
+  
+  .footer {
     height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #0e1c36;
     color: #cdd7d6;
-}
-
-.footer img {
-    width: 50%;
-    height: auto;
-}
+  }
+  
+  .footer img {
+      width: 50px;  /* This should be changed according to your design */
+      height: 50px; /* This should be changed according to your design */
+      object-fit: contain;
+  }
+  
