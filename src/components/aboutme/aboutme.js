@@ -1,32 +1,26 @@
-import React, { useState } from "react";
-import MapComponent from "./MapComponent"; // Import your map component
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-const AboutMe = () => {
-  const [isMapVisible, setIsMapVisible] = useState(true);
+const locations = [
+  {name: "Hawai'i", coordinates: [0,0], img: '../../../public/'},
+  {name: "Cancun", coordinates: [0,0], img: '../../../public'},
+  {name: "Moscow", coordinates: [0,0], img: '../../../public'},
+  {name: "London", coordinates: [0,0], img: '../../../public'},
+  {name: "Paris", coordinates: [0,0], img: '../../../public'},
+  {name: "Rome", coordinates: [0,0], img: '../../../public'},
+  {name: "Bangkok", coordinates: [0,0], img: '../../../public'},
+  {name: "Helsinki", coordinates: [0,0], img: '../../../public'},
+  {name: "Lima", coordinates: [0,0], img: '../../../public'},
+  {name: "Chiclayo", coordinates: [0,0], img: '../../../public'},
+  {name: "Macchu Picchu", coordinates: [0,0], img: '../../../public'},
+  {name: "Dublin", coordinates: [0,0], img: '../../../public'},
+  {name: "Puerta Plata", coordinates:[0,0], img: '../../../public'},
+  ];
 
-  return (
-    <div className="about-me">
-      <div className="intro">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-          purus quis vehicula hendrerit.
-        </p>
-        <p>
-          Mauris ultrices purus non turpis sagittis, a posuere lectus ornare.
-          Integer tincidunt nunc sit amet elit tincidunt, in pharetra sem
-          fermentum.
-        </p>
-        <p>
-          Fusce sodales odio a augue dictum, nec sagittis massa gravida. Vivamus
-          volutpat nisl quis libero efficitur, at sollicitudin nulla luctus.
-        </p>
-      </div>
-      <h3 className="map-title">
-        Explore the places I've been by hovering over the cities on the map!
-      </h3>
-      {isMapVisible && <MapComponent />}
-    </div>
-  );
-};
-
-export default AboutMe;
+  function InteractiveMap() {
+    return (
+      <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height:"100vh", width: "100%" }}>
+        
+      </MapContainer>
+    )
+  }
