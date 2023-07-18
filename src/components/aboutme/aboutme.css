@@ -1,18 +1,25 @@
+.aboutme {
+  background-color: #D5A021;
+}
+
 .about-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #D5A021;
 }
 
-.text-container {
+.text-container { background-color: #D5A021;
   width: 45%;
 }
 
 .image-container {
+  background-color: #D5A021;
   width: 45%;
 }
 
 .image-container img {
   max-width: 100%;
   height: auto;
+  background-color: #D5A021;
 }

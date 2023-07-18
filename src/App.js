@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/header/header";
 import Navigation from "./components/navigation/navigation";
-import Footer from "./components/Footer/Footer";
-import AboutMe from "./components/AboutMe/AboutMe";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
+import Footer from "./components/footer/footer";
+import AboutMe from "./components/aboutme/aboutme";
+import Portfolio from "./components/portfolio/portfolio";
+import Contact from "./components/contact/contact";
 import Resume from "./components/resume/resume";
 import "./App.css";
 
@@ -14,12 +14,13 @@ function App() {
     <Router>
       <Header />
       <Navigation />
-      <Switch>
-        <Route exact path="/" component={AboutMe} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<AboutMe />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 }

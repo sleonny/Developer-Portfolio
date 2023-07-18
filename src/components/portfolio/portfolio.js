@@ -5,17 +5,17 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Exerease",
-      imageUrl: process.env.PUBLIC_URL + "/public/Exerease.png",
+      imageUrl: process.env.PUBLIC_URL + "/Exerease.png",
       projectUrl: "https://github.com/michelleshanna92/Exerease",
     },
     {
       title: "FootWearHouse",
-      imageUrl: process.env.PUBLIC_URL + "/public/FootWearHouse.png",
+      imageUrl: process.env.PUBLIC_URL + "/FootWearHouse.png",
       projectUrl: "https://github.com/sleonny/FootWearhouse",
     },
     {
       title: "Golf Tournament",
-      imageUrl: process.env.PUBLIC_URL + "/public/RobbyInv.png",
+      imageUrl: process.env.PUBLIC_URL + "/RobbyInv.png",
       projectUrl: "https://github.com/sleonny/RobbyInv",
     },
   ];

@@ -1,12 +1,12 @@
 import React from "react";
-import "./Footer.css";
+import "./footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <a href="https://github.com/sleonny" target="_blank" rel="noreferrer">
         <img
-          src={process.env.PUBLIC_URL + "/public/githublogo.png"}
+          src={process.env.PUBLIC_URL + "/githublogo.png"}
           alt="Github"
         />
       </a>
@@ -16,7 +16,7 @@ const Footer = () => {
         rel="roreferrer"
       >
         <img
-          src={process.env.PUBLIC_URL + "/public/linkedinlogo.png"}
+          src={process.env.PUBLIC_URL + "/linkedinlogo.png"}
           alt="LinkedIn"
         />
       </a>
@@ -26,7 +26,7 @@ const Footer = () => {
         rel="noreferrer"
       >
         <img
-          src={process.env.PUBLIC_URL + "/public/facebooklogo.png"}
+          src={process.env.PUBLIC_URL + "/facebooklogo.png"}
           alt="Facebook"
         />
       </a>
