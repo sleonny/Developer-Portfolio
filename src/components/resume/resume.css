@@ -1,0 +1,38 @@
+.resume-section{
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 0;
+    cursor: crosshair
+}
+
+.job, .school {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+}
+
+.job:hover:hover, .school:hover {
+    background-color: #f5f5f5;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+}
