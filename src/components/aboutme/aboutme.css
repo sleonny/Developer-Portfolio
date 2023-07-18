@@ -1,16 +1,18 @@
-.about-me {
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .intro p {
-    margin-bottom: 1em;
-  }
-  
-  .map-title {
-    margin-top: 2em;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-container {
+  width: 45%;
+}
+
+.image-container {
+  width: 45%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
