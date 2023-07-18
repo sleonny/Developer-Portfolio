@@ -2,19 +2,20 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const locations = [
-  { name: "Hawai'i", coordinates: [0, 0], img: "../../../public/" },
-  { name: "Cancun", coordinates: [0, 0], img: "../../../public" },
-  { name: "Moscow", coordinates: [0, 0], img: "../../../public" },
-  { name: "London", coordinates: [0, 0], img: "../../../public" },
-  { name: "Paris", coordinates: [0, 0], img: "../../../public" },
-  { name: "Rome", coordinates: [0, 0], img: "../../../public" },
-  { name: "Bangkok", coordinates: [0, 0], img: "../../../public" },
-  { name: "Helsinki", coordinates: [0, 0], img: "../../../public" },
-  { name: "Lima", coordinates: [0, 0], img: "../../../public" },
-  { name: "Chiclayo", coordinates: [0, 0], img: "../../../public" },
-  { name: "Macchu Picchu", coordinates: [0, 0], img: "../../../public" },
-  { name: "Dublin", coordinates: [0, 0], img: "../../../public" },
-  { name: "Puerta Plata", coordinates: [0, 0], img: "../../../public" },
+  { name: "Hawai'i", coordinates: [0, 0], img: "../public/hawaii.JPG" },
+  { name: "Cancun", coordinates: [0, 0], img: "../public/mexico.jpg" },
+  { name: "Moscow", coordinates: [0, 0], img: "../public/moscow.jpg" },
+  { name: "Sochi", coordinates: [0, 0], img: "../public/sochi.jpg" },
+  { name: "London", coordinates: [0, 0], img: "../public/london.jpg" },
+  { name: "Paris", coordinates: [0, 0], img: "../public/paris.jpg" },
+  { name: "Rome", coordinates: [0, 0], img: "../public/" },
+  { name: "Bangkok", coordinates: [0, 0], img: "../public/bangkok.jpg" },
+  { name: "Helsinki", coordinates: [0, 0], img: "../public/helsinki.jpg" },
+  { name: "Lima", coordinates: [0, 0], img: "../public/lima.jpg" },
+  { name: "Stonehenge", coordinates: [0, 0], img: "../public/stonehenge.jpg" },
+  { name: "Macchu Picchu", coordinates: [0, 0], img: "../public/macchupichhu.JPG" },
+  { name: "Dublin", coordinates: [0, 0], img: "../public/dublin.JPG" },
+  { name: "Puerta Plata", coordinates: [0, 0], img: "../public/puertaplata.jpg" },
 ];
 
 function InteractiveMap() {
