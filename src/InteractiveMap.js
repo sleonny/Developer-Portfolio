@@ -8,14 +8,22 @@ const locations = [
   { name: "Sochi", coordinates: [0, 0], img: "../public/sochi.jpg" },
   { name: "London", coordinates: [0, 0], img: "../public/london.jpg" },
   { name: "Paris", coordinates: [0, 0], img: "../public/paris.jpg" },
-  { name: "Rome", coordinates: [0, 0], img: "../public/" },
+  { name: "Rome", coordinates: [0, 0], img: "../public/rome.jpg" },
   { name: "Bangkok", coordinates: [0, 0], img: "../public/bangkok.jpg" },
   { name: "Helsinki", coordinates: [0, 0], img: "../public/helsinki.jpg" },
   { name: "Lima", coordinates: [0, 0], img: "../public/lima.jpg" },
   { name: "Stonehenge", coordinates: [0, 0], img: "../public/stonehenge.jpg" },
-  { name: "Macchu Picchu", coordinates: [0, 0], img: "../public/macchupichhu.JPG" },
+  { name: "Macchu Picchu",
+    coordinates: [0, 0],
+    img: "../public/macchupichhu.JPG",
+  },
   { name: "Dublin", coordinates: [0, 0], img: "../public/dublin.JPG" },
-  { name: "Puerta Plata", coordinates: [0, 0], img: "../public/puertaplata.jpg" },
+  {
+    name: "Puerta Plata",
+    coordinates: [0, 0],
+    img: "../public/puertaplata.jpg",
+  },
+  { name: "Windsor", coordinates: [0, 0], img: "../public/windsor.jpg" },
 ];
 
 function InteractiveMap() {
