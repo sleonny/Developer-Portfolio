@@ -1,25 +1,45 @@
-.aboutme {
-  background-color: #D5A021;
-}
-
 .about-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #D5A021;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* creates two equal columns */
+  grid-template-rows: 1fr 1fr; /* creates two equal rows */
+  height: 100vh; /* takes the full height of the viewport */
 }
 
-.text-container { background-color: #D5A021;
-  width: 45%;
+.text-container {
+  grid-column: 1; /* places the text in the first column */
+  grid-row: 1; /* places the text in the first row */
+  padding: 20px;
+  text-align: center;
 }
 
 .image-container {
-  background-color: #D5A021;
-  width: 45%;
+  grid-column: 2; /* places the image in the second column */
+  grid-row: 1; /* places the image in the first row */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  background-color: #D5A021;
-}
+
+
+  .image-container img {
+    width: 60%; /* ensures the image takes the full width of its container */
+    height: 100%; /* ensures the image takes the full height of its container */
+    object-fit: cover; /* ensures the image covers the full area while maintaining aspect ratio */
+  }
+  
+  .map-container {
+    grid-column: span 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .map-container .leaflet-container {
+    height: 75%;
+    width: 75%;
+  }
+  

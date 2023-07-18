@@ -13,7 +13,8 @@ const locations = [
   { name: "Helsinki", coordinates: [0, 0], img: "../public/helsinki.jpg" },
   { name: "Lima", coordinates: [0, 0], img: "../public/lima.jpg" },
   { name: "Stonehenge", coordinates: [0, 0], img: "../public/stonehenge.jpg" },
-  { name: "Macchu Picchu",
+  {
+    name: "Macchu Picchu",
     coordinates: [0, 0],
     img: "../public/macchupichhu.JPG",
   },
@@ -28,9 +29,10 @@ const locations = [
 
 function InteractiveMap() {
   return (
+    <div className="map-container">
     <MapContainer
       center={[51.505, -0.09]}
-      zoom={13}
+      zoom={2}
       style={{ height: "50vh", width: "50%" }}
     >
       <TileLayer
@@ -48,6 +50,7 @@ function InteractiveMap() {
         </Marker>
       ))}{" "}
     </MapContainer>
+    </div>
   );
 }
 
