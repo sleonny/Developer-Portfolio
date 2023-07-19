@@ -1,4 +1,18 @@
 .resume {
     background-color: #D5A021;
-    color: #0e1c36
+    color: #0e1c36;
+    text-align: center;
 }
+
+.skills-list {
+    list-style: none; /* removes bullet points */
+    display: flex; /* makes the list items align in a row */
+    flex-wrap: wrap; /* allows list items to wrap to the next line */
+    justify-content: space-around; /* spaces the list items evenly around the line */
+  }
+  
+  .skills-list li {
+    width: 50%; /* gives each list item a width of 50% to ensure two items per line */
+    text-align: center; /* centers the text within each list item */
+  }
+  

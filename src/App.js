@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
-import Navigation from "./components/navigation/navigation";
 import Footer from "./components/footer/footer";
 import AboutMe from "./components/aboutme/aboutme";
 import Portfolio from "./components/portfolio/portfolio";
@@ -14,7 +13,6 @@ function App() {
     <div className="app-container">
       <Router>
         <Header />
-        <Navigation />
         <div className="main-content">
           <Routes>
             <Route path="/" element={<AboutMe />} />

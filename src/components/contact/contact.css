@@ -19,7 +19,7 @@ label {
 input[type="text"], textarea {
   font-size: large;
   width: 100%; /* Takes the full width of its parent */
-  padding: 10px;
+  padding: 55px;
   margin-top: 5px;
   box-sizing: border-box; /* Makes the padding included in the element's total width */
 }
