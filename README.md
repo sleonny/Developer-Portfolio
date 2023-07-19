@@ -1,6 +1,6 @@
 # Developer Profile & Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is designed to highlight myself as a person, a developer, and a potential team member to future employers. The portfolio is built with React, which has allowed me to practice and hone my skills in this technology.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is designed to highlight myself as a person, a developer, and a potential team member to future employers. The portfolio is built with React, which has allowed me to practice and hone my skills using this technology.
 
 ## Table of Contents
 
@@ -63,7 +63,7 @@ To test this application, navigate to the project directory and execute 'npm tes
 
 Fork the repository and submit a pull request to contribute. Thank you!
 
-## Questions
+## Questions?
 
 Find me on GitHub @[sleonny](https://github.com/sleonny) or email me at leonardmsean@gmail.com.
 
