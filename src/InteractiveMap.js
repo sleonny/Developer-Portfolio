@@ -3,9 +3,9 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
 const customMarkerIcon = L.icon({
-  iconUrl: process.env.PUBLIC_URL + "../public/marker.png", // Adjust this path
-  iconSize: [38, 95], // Adjust the size of your icon if needed
-  iconAnchor: [22, 94], // Adjust this point of the icon which will correspond to the marker's location
+  iconUrl: process.env.PUBLIC_URL + "../marker.png", // Adjust this path
+  iconSize: [25, 25], // Adjust the size of your icon if needed
+  iconAnchor: [12.5, 12.5], // Adjust this point of the icon which will correspond to the marker's location
   popupAnchor: [-3, -76], // Adjust this point from which the popup should open relative to the iconAnchor
 });
 
@@ -101,7 +101,7 @@ function InteractiveMap() {
               <img
                 src={process.env.PUBLIC_URL + location.img}
                 alt={location.name}
-                style={{ width: "100px", height: "auto" }} // adjust size as needed
+                style={{ width: "300px", height: "auto" }} // adjust size as needed
               />
               <p>{location.name}</p>
             </Popup>

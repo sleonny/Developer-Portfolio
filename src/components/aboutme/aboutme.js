@@ -21,6 +21,7 @@ As I transition into the tech sector, I am keen to bring my unique blend of skil
           />
         </div>
       </div>
+      <h2 style={{ textAlign: "center", color: "black" }}>Check out some of the places I've visited!</h2>
       <InteractiveMap />
     </div>
   );
