@@ -3,6 +3,8 @@
   grid-template-columns: 1fr 1fr; /* creates two equal columns */
   grid-template-rows: 1fr 1fr; /* creates two equal rows */
   height: 100vh; /* takes the full height of the viewport */
+  color: black;
+  font-size: x-large;
 }
 
 .text-container {
@@ -36,6 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
   }
   
   .map-container .leaflet-container {
