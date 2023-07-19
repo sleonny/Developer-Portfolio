@@ -2,6 +2,7 @@
     background-color: #D5A021;
     color: #0e1c36;
     text-align: center;
+    font-size: large;
 }
 
 .skills-list {
@@ -12,7 +13,11 @@
   }
   
   .skills-list li {
+    font-size: xx-large;
     width: 50%; /* gives each list item a width of 50% to ensure two items per line */
     text-align: center; /* centers the text within each list item */
   }
   
+  .experience {
+    font-size: 50px;
+  }
