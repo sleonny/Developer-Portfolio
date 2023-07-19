@@ -1,14 +1,22 @@
 .navigation {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 10px 0;
+    
 }
 
 .navigation a {
+    font-size: large;
 color: white;
 text-decoration: none;
 }
 
 .navigation .active {
     color: #721121;
+}
+
+label {
+    color: black;
+    font-size: x-large;
+    
 }

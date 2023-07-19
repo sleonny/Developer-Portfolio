@@ -17,6 +17,7 @@ label {
 }
 
 input[type="text"], textarea {
+  font-size: large;
   width: 100%; /* Takes the full width of its parent */
   padding: 10px;
   margin-top: 5px;
