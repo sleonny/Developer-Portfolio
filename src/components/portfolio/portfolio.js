@@ -56,11 +56,6 @@ const Portfolio = () => {
       imageUrl: process.env.PUBLIC_URL + "/FootWearHouse.png",
       projectUrl: "https://github.com/sleonny/FootWearhouse",
     },
-    {
-      title: "Golf Tournament",
-      imageUrl: process.env.PUBLIC_URL + "/RobbyInv.png",
-      projectUrl: "https://github.com/sleonny/RobbyInv",
-    },
   ];
 
   return (
@@ -83,4 +78,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-

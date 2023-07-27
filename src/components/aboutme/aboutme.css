@@ -1,8 +1,8 @@
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* creates two equal columns */
-  grid-template-rows: 1fr 1fr; /* creates two equal rows */
-  height: 100vh; /* takes the full height of the viewport */
+  grid-template-rows: auto auto; /* creates two rows for text/image and map */
+  min-height: 100vh; /* minimum height of viewport */
   color: black;
   font-size: x-large;
 }
@@ -24,25 +24,15 @@
   overflow: hidden;
 }
 
+.map-container {
+  grid-column: 1 / -1; /* spans across all columns */
+  grid-row: 2; /* places the map in the second row */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-  .image-container img {
-    width: 60%; /* ensures the image takes the full width of its container */
-    height: 100%; /* ensures the image takes the full height of its container */
-    object-fit: cover; /* ensures the image covers the full area while maintaining aspect ratio */
-  }
-  
-  .map-container {
-    grid-column: span 2;
-    grid-row: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
-  }
-  
-  .map-container .leaflet-container {
-    height: 75%;
-    width: 75%;
-  }
-  
+.map-container .leaflet-container {
+  height: 75%;
+  width: 75%;
+}
