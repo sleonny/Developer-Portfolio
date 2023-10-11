@@ -18,64 +18,64 @@ const locations = [
   {
     name: "Cancun",
     coordinates: [21.1619, -86.8515],
-    img: "/mexico.jpg",
+    img: "/mexico2.jpg",
   },
   {
     name: "Moscow",
     coordinates: [55.7558, 37.6176],
-    img: "/moscow.jpg",
+    img: "/moscow2.jpg",
   },
   {
     name: "Sochi",
     coordinates: [43.6028, 39.7345],
-    img: "/sochi.jpg",
+    img: "/sochi2.jpg",
   },
   {
     name: "London",
     coordinates: [51.5074, -0.1278],
-    img: "/london.jpg",
+    img: "/london2.jpg",
   },
-  { name: "Paris", coordinates: [48.8566, 2.3522], img: "/paris.jpg" },
-  { name: "Rome", coordinates: [41.9028, 12.4964], img: "/rome.jpg" },
+  { name: "Paris", coordinates: [48.8566, 2.3522], img: "/paris2.jpg" },
+  { name: "Rome", coordinates: [41.9028, 12.4964], img: "/rome2.jpg" },
   {
     name: "Bangkok",
     coordinates: [13.7563, 100.5018],
-    img: "/bangkok.jpg",
+    img: "/thailand2.jpg",
   },
   {
     name: "Helsinki",
     coordinates: [60.1699, 24.9384],
-    img: "/helsinki.jpg",
+    img: "/helsinki2.jpg",
   },
   {
     name: "Lima",
     coordinates: [-12.0464, -77.0428],
-    img: "/lima.jpg",
+    img: "/lima2.jpg",
   },
   {
     name: "Stonehenge",
     coordinates: [51.1789, -1.8262],
-    img: "/stonehenge.jpg",
+    img: "/stonehenge2.jpg",
   },
   {
     name: "Macchu Picchu",
     coordinates: [-13.1631, -72.545],
-    img: "/macchupichhu.JPG",
+    img: "/macchu2.JPG",
   },
   {
     name: "Dublin",
     coordinates: [53.3498, -6.2603],
-    img: "/dublin.JPG",
+    img: "/dublin2.JPG",
   },
   {
     name: "Puerta Plata",
     coordinates: [19.7808, -70.6871],
-    img: "/puertaplata.jpg",
+    img: "/dr2.jpg",
   },
   {
     name: "Windsor",
     coordinates: [51.4839, -0.6044],
-    img: "/windsor.jpg",
+    img: "/windsor2.jpg",
   },
 ];
 
