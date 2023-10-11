@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
@@ -80,15 +80,12 @@ const locations = [
 ];
 
 function InteractiveMap() {
-  // Add state to store the clicked location
-  const [clickedLocation, setClickedLocation] = useState(null);
-
   return (
-    <div className="map-and-image-container" style={{display: 'flex', height: '60vh'}}>
+    <div className="map-container">
       <MapContainer
         center={[51.505, -0.09]}
         zoom={2}
-        style={{ height: "100%", width: "66%" }}
+        style={{ height: "50vh", width: "50%" }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -99,27 +96,18 @@ function InteractiveMap() {
             position={location.coordinates}
             key={idx}
             icon={customMarkerIcon}
-            eventHandlers={{
-              click: () => {
-                // On click, set the clicked location state
-                setClickedLocation(location);
-              },
-            }}
           >
-            <Popup>{location.name}</Popup>
+            <Popup>
+              <img
+                src={process.env.PUBLIC_URL + location.img}
+                alt={location.name}
+                style={{ width: "300px", height: "auto" }} // adjust size as needed
+              />
+              <p>{location.name}</p>
+            </Popup>
           </Marker>
-        ))}
+        ))}{" "}
       </MapContainer>
-      {clickedLocation && (
-        <div style={{ width: "33%", textAlign: 'center', marginTop: '20px' }}>
-          <img
-            src={process.env.PUBLIC_URL + clickedLocation.img}
-            alt={clickedLocation.name}
-            style={{ width: "80%", height: "90%" }} // adjust size as needed
-          />
-          <p>{clickedLocation.name}</p>
-        </div>
-      )}
     </div>
   );
 }
